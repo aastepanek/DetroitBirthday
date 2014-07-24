@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Lands of Detroit</title>
+<link href="stylenew.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="zoom_assets/jquery-1.11.1.min.js"></script>
+<script src="zoom_assets/jquery.smoothZoom.min.js"></script>
+<script src="LandsDetroit.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53156458-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+
+
+
+	<div id="function">
+		<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:357, y:248, zoom:150, speed:2})" onClick="return false">FocusTo</a>
+		<span>Downtown</span>
+		
+		<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:492, y:482, zoom:200})" onClick="return false">FocusTo</a>
+		<span>Woodbridge</span>
+
+
+		<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:676, y:196, zoom:100})" onClick="return false">FocusTo</a>
+		<span>Corktown</span>
+			
+		<a href="#" onmousedown="$('#map').smoothZoom('zoomIn')" onClick="return false">Zoom In</a>
+			
+		<a href="#" onmousedown="$('#map').smoothZoom('zoomOut')" onClick="return false">Zoom Out</a>
+	
+		<a href="#" onmousedown="$('#map').smoothZoom('moveLeft')" onClick="return false">Move Left</a>
+		
+		<a href="#" onmousedown="$('#map').smoothZoom('moveRight')" onClick="return false">Move Right</a>
+		
+		<a href="#" onmousedown="$('#map').smoothZoom('moveUp')" onClick="return false">Move Up</a>
+		
+		<a href="#" onmousedown="$('#map').smoothZoom('moveDown')" onClick="return false">Move Down</a>
+		
+		<a href="#" onmousedown="$('#map').smoothZoom('Reset')" onClick="return false">Reset</a>
+	</div>
+
+	<img id="map" src="images/map.jpg" />
+
+
+</body>
+
+</html>

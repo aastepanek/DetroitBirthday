@@ -3,18 +3,21 @@ jQuery(function($){
 			width: '100%',
             height: '100%',
 			full_BROWSER_SIZE: 'YES',
-			pan_BUTTONS_SHOW: "YES",
+			pan_BUTTONS_SHOW: "NO",
             pan_LIMIT_BOUNDARY: "YES",
             button_SIZE: 24,
             button_SIZE_TOUCH_DEVICE: 50,
             button_ALIGN: "top right",
             button_MARGIN: 10,
-            zoom_MAX: 200,
+            zoom_MAX: 350,
             border_TRANSPARENCY: 20,
             responsive: true,
             responsive_maintain_ratio: false,
             touch_DRAG: true,
             mouse_DRAG: true,
+            initial_ZOOM:'300',
+            initial_POSITION: '150,1500'
+
 		});
 	});
 	

@@ -3,7 +3,10 @@ html, body {
 }
 body {
     width: 100%;
+    height: auto;
     margin: 0px;
+    overflow: hidden;
+
 }
 .smooth_zoom_preloader {
     background-image: url(zoom_assets/preloader.gif);
@@ -19,7 +22,10 @@ body {
 span {
     color: #78C0FC;
     font-family:"Open Sans", sans-serif;
+    padding:10px;
+
 }
+
 a:link {
     color: #06C;
     font-weight: bold;
@@ -43,14 +49,269 @@ a:hover {
 }
 
 
+
+
 /*Controller Styles*/
-#control{
-	position: absolute;
-	z-index: 999;
-	top:0;
-	left:0;
-	width:110px; 
-	background-color:#F2F2F2; 
-	padding:15px
+
+#nav{
+    position: absolute;
+    z-index: 999;
+    background-color:#282C2D;
+    width:100%;
+    height: 180px;
+    overflow: hidden;
+    position: absolute !important;
+    bottom: 0;
+
+
+}
+
+
+.text{
+    margin: 10px 10px 10px 10px;
+    float: left;
+    padding-left:20px;
+    padding-top:30px;
+    text-align: center;
+    width:30%;
+
+}
+
+.text h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.text p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+}
+
+
+.control{
+    display: inline-block;
+    text-align: center;
+    margin-left:auto;
+
+    
+}
+
+.control li{
+display:inline;
+float:right;
+
+}
+
+.control a{
+    display:inline-block;
+    padding-left:20px;
+    float:right;
+}
+
+.control img{
+    width:80%;
+    height:80%;
+    padding: 20px 30px 0 30px;
+
+}
+
+.control span{
+    display:block;
+
+}
+@media all and (max-width: 1840px) and (min-width: 1640px){
+
+.text{
+    padding-top:15px;
+}
+
+.control{
+        padding-right:50px;
+        float:right;
+    }
+
+
+    .control img{
+        height:85%;
+        width:85%;
+        padding-left:15px;
+        padding-right:15px;
+        margin:auto;
+
+    }
+    
+}
+
+@media all and (max-width: 1640px) and (min-width: 1400px){
+
+.text{
+    padding-top:30px;
+}
+
+.control{
+        padding-right:50px;
+        float:right;
+    }
+
+
+    .control img{
+        height:75%;
+        width:75%;
+        padding-left:15px;
+        padding-right:15px;
+        margin:auto;
+
+    }
+    
+}
+
+
+@media all and (max-width: 1640px) and (min-width: 1555px){
+
+.text{
+    padding-top:25px;
+}
+
+.control{
+        padding-right:40px;
+        float:right;
+    }
+
+
+    .control img{
+        height:65%;
+        width:65%;
+        padding-left:10px;
+        padding-right:10px;
+        margin:auto;
+
+    }
+    
+}
+
+@media all and (max-width: 1555px) and (min-width: 1270px){
+
+.text{
+    padding-top:30px;
+}
+
+.control{
+        padding-right:70px;
+        float:right;
+        padding-top: 10px;
+    }
+
+
+    .control img{
+        height:65%;
+        width:65%;
+        display:inline-block;
+        padding-left:2px;
+        padding-right:2px;
+        margin:auto;
+
+    }
+    
+}
+
+@media all and (max-width: 1270px) and (min-width: 1100px){
+
+.text{
+    padding-top:15px;
+   margin-right: auto;
+   margin-left:auto;
+}
+
+.control{
+    padding-top:10px;
+        margin-right: auto;
+        margin-left:auto;
+        width:;
+    }
+
+
+    .control img{
+        height:65%;
+        width:65%;
+        padding-left:2px;
+        padding-right:2px;
+        margin-left:auto;
+        margin-right:auto;
+
+    }
+    
+}
+
+
+
+
+@media all and (max-width: 1270px) and (min-width: 1160px){
+
+.text{
+width:20%;
+}
+
+.text 
+    .control img{
+        height:80%;
+        width:80%;
+        padding-left:5px;
+        padding-right:5px;
+        margin:auto;
+
+    }
+    .control{
+        padding-right:60px;
+        float:right;
+
+    }
+ 
+}
+
+
+@media all and (max-width:1160px) and (min-width:600px){
+
+.text{
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    padding: 5px;
+}
+.text h1{
+    font-size:24px;
+    margin-right: auto;
+    margin-left:auto;
+    padding-right:30px;
+    padding-left:30px;
+}
+
+.text p{
+    font-size:12px;
+    margin-right: auto;
+    margin-left:auto;
+    text-align: center;
+    padding-right:30px;
+     padding-left:30px;  
+}
+.control{
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#nav{
+    height:40%
+}
+
+.control img{
+    height:50%;
+    width:50%;
+    padding:10px;
+    
+}
 }
 

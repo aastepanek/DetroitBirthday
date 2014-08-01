@@ -1,92 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>Lands of Detroit</title>
-<link href="stylenew.css" rel="stylesheet" type="text/css" media="screen" />
-<script src="zoom_assets/jquery-1.11.1.min.js"></script>
-<script src="zoom_assets/jquery.smoothZoom.min.js"></script>
-<script src="LandsDetroit.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lands of Detroit</title>
+		<link href="stylenew.css" rel="stylesheet" type="text/css" media="screen" />
+		<script src="zoom_assets/jquery-1.11.1.min.js"></script>
+		<script src="zoom_assets/jquery.smoothZoom.min.js"></script>
+		<script src="LandsDetroit.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] ||
+				function() {
+					(i[r].q = i[r].q || []).push(arguments);
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m);
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-53156458-1', 'auto');
-  ga('send', 'pageview');
+			ga('create', 'UA-53156458-1', 'auto');
+			ga('send', 'pageview');
 
-</script>
-</head>
-<body>
+		</script>
+	</head>
+	<body>
 
-	<div class="map-container">
-	<img id="map" src="images/map.jpg" /> 
-	</div>
+		<div class="map-container">
+			<!--<img id="map" src="images/map.jpg" />-->
+		</div>
+
+		<div id="nav" class="cf">
+
+			<div class="row">
+				
+				<div class="text">
+					<h1>READY TO EXPLORE?</h1>
+					<p>
+						Click on any icon to find its place on the map. Then get out and go visit!
+					</p>
+				</div>
 	
-
-
-	<div id="nav">
-
-	<div class="text">
-	<h1> Ready to Explore?</h1>
-	<p>Click on any icon to find its place on the map. Then get out and go visit!</p>
-	</div>
-
-	<ul class="control">
-	<li>
-		<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:700, y:525, zoom:350, speed:2})" onClick="return false">
-			<img src="images/corktown.svg">
-			<span>Corktown</span>
-		</a>
-	
-	</li>
-
-	<li>
-		
-		<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:650, y:450, zoom:300})" onClick="return false">
-			<img src="images/woodbridgeicon.svg">
-			<span>Woodbridge</span>
-		</a> 		
-	
-	</li>
-
-	<li>
-		<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:750, y:480, zoom:275})" onClick="return false">
-			<img src="images/easternmarket.svg">
-			<span>Eastern Market</span>
+				<ul class="control cf">
+					<li>
+						<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:700, y:525, zoom:350, speed:2})" onclick="return false"> 
+							<img src="images/corktown.svg"> <span>Corktown</span> 
+						</a>
+					</li>
+					<li>
+						<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:650, y:450, zoom:300})" onclick="return false"> 
+							<img src="images/woodbridgeicon.svg"> <span>Woodbridge</span> 
+						</a>
+					</li>
+					<li>
+						<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:750, y:480, zoom:275})" onclick="return false"> 
+							<img src="images/easternmarket.svg"> <span>Eastern Market</span> 
+						</a>
+					</li>
+					<li>
+						<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:560, y:500, zoom:190})" onclick="return false"> 
+							<img src="images/mexicantown.svg"> <span>Mexican Town</span> 
+						</a>
+					</li>
+					<li>
+						<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:676, y:440, zoom:230})" onclick="return false"> 
+							<img src="images/midtownicon.svg"> <span>Midtown</span> 
+						</a>
+					</li>
+					<li>
+						<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:150, y:1500, zoom:300})" onclick="return false"> 
+							<img src="images/easternmarket.svg"/> <span>Reset</span> 
+						</a>
+					</li>
+				</ul>
+				
+			</div>
 			
-		</a> 
-	</li>
+		</div>
 
-	<li>
-		<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:560, y:500, zoom:190})" onClick="return false">
-			<img src="images/mexicantown.svg">
-			<span>Mexican Town</span>
-			
-		</a> 
-	</li>
-
-	<li>
-		<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:676, y:440, zoom:230})" onClick="return false">
-			<img src="images/midtownicon.svg">
-			<span>Midtown</span>
-			
-		</a> 
-	</li>
-
-	<li>	
-		<a href="#" onmousedown="$('#map').smoothZoom('focusTo', {x:150, y:1500, zoom:300})" onClick="return false">
-		<img src="images/easternmarket.svg"/>
-			<span>Reset</span>
-		</a>
-	</il>
-	</ul>
-
-	</nav>
-</body>
+	</body>
 
 </html>
-
